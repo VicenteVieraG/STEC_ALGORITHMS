@@ -1,0 +1,3 @@
+[submodule ".\\gitmodules"]
+	path = .\\gitmodules
+	url = https://github.com/VicenteVieraG/BuildConf.git
