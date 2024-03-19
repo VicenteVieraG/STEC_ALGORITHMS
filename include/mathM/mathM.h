@@ -1,0 +1,3 @@
+namespace MATH {
+    int math();
+}

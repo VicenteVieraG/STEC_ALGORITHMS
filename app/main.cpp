@@ -1,10 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
 #include <qatar.h>
+#include <mathM.h>
 
 int main(int argc, char** argv){
     std::cout<<"HOLA CRAYOLA"<<std::endl;
-    QATAR::qatar();
+    MATH::math();
 
     system("pause");
 
