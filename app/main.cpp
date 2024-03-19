@@ -1,28 +1,24 @@
-#include <iostream>
-#include <stdlib.h>
+#include <cstdio>
 #include <mathM.h>
 
 int main(int argc, char** argv){
     // Read data
     int inputCount = 0;
-    double Y = 0;
+    unsigned int Y = 0;
 
-    std::cin>>inputCount;
+    scanf("%d", &inputCount);
 
-    for(int i = 1; i < inputCount; i++){
-        std::cin>>Y;
+    while(inputCount--){
+        scanf("%u", &Y);
 
-        if(MATH::math(Y) == -1){
-            std::cout<<"NAI"<<std::endl;
-        }else{
-            std::cout<<MATH::math(Y)<<std::endl;
+        const double N = MATH::math(Y);
+
+        if(N == -1) {
+            printf("NAI\n");
+        } else {
+            printf("%.0f\n", N);
         }
     }
-
-    std::cin>>Y;
-
-    if(MATH::math(Y) == -1) std::cout<<"NAI";
-    std::cout<<MATH::math(Y);
 
     return 0;
 }
