@@ -1,13 +1,28 @@
 #include <iostream>
 #include <stdlib.h>
-#include <qatar.h>
 #include <mathM.h>
 
 int main(int argc, char** argv){
-    std::cout<<"HOLA CRAYOLA"<<std::endl;
-    MATH::math();
+    // Read data
+    int inputCount = 0;
+    double Y = 0;
 
-    system("pause");
+    std::cin>>inputCount;
+
+    for(int i = 1; i < inputCount; i++){
+        std::cin>>Y;
+
+        if(MATH::math(Y) == -1){
+            std::cout<<"NAI"<<std::endl;
+        }else{
+            std::cout<<MATH::math(Y)<<std::endl;
+        }
+    }
+
+    std::cin>>Y;
+
+    if(MATH::math(Y) == -1) std::cout<<"NAI";
+    std::cout<<MATH::math(Y);
 
     return 0;
 }
