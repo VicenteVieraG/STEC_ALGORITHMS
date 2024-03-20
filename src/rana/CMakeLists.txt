@@ -1,0 +1,1 @@
+add_library(rana STATIC rana.cpp)
