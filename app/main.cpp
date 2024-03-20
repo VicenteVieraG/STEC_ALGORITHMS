@@ -1,10 +1,13 @@
 #include <cstdio>
-#include <mathM.h>
+#include <iostream>
 #include <rana.h>
 
 // Rana xd
 int main(int argc, char** argv){
+    // std::cout<<argc<<std::endl;
+    // std::cout<<*(argv+1)<<std::endl;
     
+    std::system("pause");
     return 0;
 }
 
