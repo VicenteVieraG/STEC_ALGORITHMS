@@ -58,6 +58,7 @@
 // }
 #include <iostream>
 #include <rana.h>
+#include <fibHeap.h>
 
 // Rana xd
 int main(int argc, char** argv){
