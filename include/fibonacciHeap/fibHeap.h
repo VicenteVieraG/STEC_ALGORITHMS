@@ -20,6 +20,8 @@ class FibHeap {
         FibHeap(): min(nullptr), n(0) {}
 
         void insert(int key);
+        int getMin() const;
+        void printHeap();
         node* link(node* y, node* x);
         void consolidate();
         int extracMin();

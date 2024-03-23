@@ -1,9 +1,13 @@
 #include <fibHeap.h>
 
+int FibHeap::getMin() const { return this->min->key; }
+
 void FibHeap::insert(int key){
     // Create a new Node
     node* newNode = new node;
     newNode->key = key;
+    newNode->right = newNode;
+    newNode->left = newNode;
 
     if(this->min == nullptr){
         this->min = newNode;

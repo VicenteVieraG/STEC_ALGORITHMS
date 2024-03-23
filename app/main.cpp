@@ -1,4 +1,5 @@
 // #include <iostream>
+#include <mathM.h>
 
 // void swap(int& A, int& B){
 //     const int C = A;
@@ -84,6 +85,7 @@ int main(int argc, char** argv){
 
     RANAXD::fillMatrix(N, K, P, M);
     RANAXD::printMatrix(M, N);
+    RANAXD::rana(M, N);
 
     return 0;
 }
